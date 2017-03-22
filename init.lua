@@ -4,6 +4,7 @@ local function get_source_directory()
     .source
     :sub(2)
     :match("(.*/)")
+    or ''
 end
 
 local function get_file_name(path)
